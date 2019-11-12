@@ -28,6 +28,7 @@ RUN chown -R www-data:www-data /home/root/www/*
 RUN chmod -R 755 /home/root/www/*
 RUN mv /home/root/localhost /etc/nginx/sites-available/localhost
 RUN ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/localhost
+COPY srcs/wordpress.sql /home/root/
 
 RUN echo ' \e[36m\e[1m=== Installing PHPMyAdmin ===\e[0m'
 RUN cd /home/root/
