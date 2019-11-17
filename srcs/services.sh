@@ -5,5 +5,5 @@ service mysql start
 
 echo "GRANT ALL PRIVILEGES ON *.* TO 'tmarx'@'localhost' IDENTIFIED BY 'password';" | mysql -u     root
 echo "FLUSH PRIVILEGES;" | mysql -u root
-echo "CREATE DATABASE wordpress;" | mysql -u tmarx -ppassword
-mysql -u tmarx -ppassword wordpress < /home/root/wordpress.sql
+echo "CREATE DATABASE ft_server;" | mysql -u tmarx -ppassword
+mysql -u tmarx -ppassword ft_server < /home/root/ft_server.sql
